@@ -131,6 +131,9 @@ p {
 }
 
 .left-20 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: right;
   width: 20%;
 }
@@ -147,7 +150,9 @@ p {
 }
 
 .right-20 {
-  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20%;
 }
 
@@ -166,7 +171,7 @@ p {
 }
 
 .up-padding {
-  height: 10%;
+  height: 40px;
 }
 
 .exp-title {
