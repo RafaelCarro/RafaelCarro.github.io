@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="variables.js"></script>
+    <script src="libs/p5.js"></script>
+    <script>
+    var lobbyCode = "abcdefg";
+    document.getElementById("lobbyCode").innerHTML = lobbyCode;
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon.png">
+  </head>
+
+  <!--HEADER BUTTOMS SCRIPT-->
+  <script>
+    let experience_scroll = document.getElementById("experience");
+    function experience() {
+      document.getElementById("experience_block").scrollIntoView({ behavior: "smooth"});
+    }
+
+    let about_scroll = document.getElementById("about");
+    function about() {
+      document.getElementById("about_block").scrollIntoView({ behavior: "smooth"});
+    }
+
+    let contact_scroll = document.getElementById("contact");
+    function contact() {
+      document.getElementById("contact_block").scrollIntoView({ behavior: "smooth"});
+    }
+
+    let val = document.getElementById('exp');
+
+    </script>
+
+  <!--GENERATIVE P5 PACKGROUND-->
+  <div id="gen_col">  
+    <script src="background.js"></script>
+  </div>
+
+  <body>
+    <!--HEADER-->
+    <div id="header">
+      <div id="content_box">
+        <h1 onclick="about()" id="about" class="header_buttom">[ABOUT]</h1>
+        <h1 onclick="experience()" id="experience" class="header_buttom">[EXPERIENCE]</h1>
+        <h1 onclick="contact()" id="contact" class="header_buttom">[CONTACT]</h1>
+      </div>
+    </div>
+
+    <!--ABOUT-->
+    <div id="about_block">
+      <h1 class="center">ABOUT</h1>
+      <div class="flex_display">
+        <h2 id="about_text">Hi, I'm Rafael Carro, I study Computer Engineering at UNICAMP (Universidade Estadual de Campinas), Brazil.
+          My current interests are in competitive programming, cybersecurity and embbed systems. I have experience with C/C++,
+          Java/TypeScript and Python.</h2>
+        <img id="conway" src="media/Conway_Example.gif">
+      </div>
+    </div>
+
+    <!--EXPERIENCE-->
+    <div class="center" id="experience_block">
+      <h1>EXPERIENCE</h1>
+
+      <div class="side_side">
+        <div class="padding"></div>
+        <div class="left-20">
+          <div class="padding"></div>
+          <img id="exp_symbol" src="media/Tenchi.png">
+        </div>
+        <div class="little-padding"></div>
+        <div class="little-padding"></div>
+        <div class="right-70">
+          <div class="up-padding"></div>
+          <h1 class="exp-title"><<-- TENCHI SECURITY -->></h1>
+          <h2 class="exp-body">  Tenchi is a cybersecurity startup that focuses on third-parties security assessments. There I worked on the back-end
+            on the API team, where I used Node.JS and TypeScript to integrating the Zanshin engine and the portal front-end, furthermore the use of AWS
+            and github was essential in building it in a severless and secure way.
+          </h2>
+        </div>
+      </div>
+
+      <div class="side_side">
+        <div class="padding"></div>
+        <div class="left-70">
+          <div class="up-padding"></div>
+          <div class="up-padding"></div>
+          <h1 class="exp-title"><<-- MARATONIC -->></h1>
+          <h2 class="exp-body">  I was schorlarship holder for MaratonIC throught 2023 for studies in competitive programming. There I competed
+            for UNICAMP in programming marathons and studied algorithms. I mostly competed in SBC national marathons, internal marathons and
+            Samsung-UNICAMP marathons and trained on Codeforces and LeetCode.
+          </h2>
+        </div>
+        <div class="right-20">
+          <img id="exp_symbol" src="media/MaratonIC.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="side_side">
+      <div class="padding"></div>
+      <div class="left-20">
+        <div class="padding"></div>
+        <img id="exp_symbol" src="media/Antares.png">
+      </div>
+      <div class="right-70">
+        <div class="up-padding"></div>
+        <h1 class="exp-title"><<-- ANTARES FOGUETEMODELISMO-->></h1>
+        <h2 class="exp-body">  I worked at Antares as a member of the Eletronics Departament, there we developed our own Avionics and
+          Telemetry systems for suborbital rockets. There I worked closely at embbed systems and circuitry, developing PCB's and flight
+          control algorithms. For most of my time there I worked on the Aurora III 1km Rocket.
+        </h2>
+      </div>
+    </div>
+
+    <!--CONTACT INFO-->
+    <div id="contact_block">
+      <h1 class="center">CONTACT</h1>
+      <div class="side_side">
+        <div class="left-50">
+          <h2>PROFESSIONAL</h2>
+          <h2><a href="mailto:r240879@dac.unicamp.br">EMAIL</a></h2>
+          <h2><a href="https://www.linkedin.com/in/rafaelcarrog/">LINKEDIN</a></h2>
+          <h2><a href="https://github.com/RafaelCarro">GITHUB</a></h2>
+        </div>
+        <div class="right-50">
+          <h2>PERSONAL</h2>
+          <h2><a href="mailto:rafaelcgaudim@yahoo.com.br">EMAIL</a></h2>
+          <h2><a href="https://t.me/RafaCarro">TELEGRAM</a></h2>
+          <h2><a href="https://codeforces.com/profile/RafaCarro">CODEFORCES</a></h2>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
